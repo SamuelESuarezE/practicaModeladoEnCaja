@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "SuperiorMedium";
+    src: url("fonts/LTSuperior-Medium.otf");
+}
+
+@font-face {
+    font-family: "SuperiorBold";
+    src: url("fonts/LTSuperior-Bold.otf");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,10 +21,119 @@ body {
     height: 100vh;
 }
 
+/* Parte izquierda */
+
 .left {
+    display: flex;
+    flex-direction: column;
+    font-family: SuperiorMedium;
     flex: 1;
     height: 100%;
     background: white;
+}
+
+/* Admin Site */
+
+.left .title {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.title img {
+    margin-left: 4px;
+    width: 60px;
+}
+
+.title h1 {
+    font-size: 28px;
+    color: #3391F4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Dashboard */
+
+.left .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.left .container .dashboard {
+    display: flex;
+    position: relative;
+    top: 40px;
+    width: 15vw;
+    background-color: #3391F4;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.left .container .dashboard:hover {
+    border-radius: 0px;
+    width: 16.67vw;
+    cursor: pointer;
+    background-color: #256ebc;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.left .container .dashboard:hover::after {
+    transition: 0.3s ease;
+}
+
+.left .container .dashboard img {
+    margin-left: 4px;
+    width: 30px;
+}
+
+.left .container .dashboard p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Main & Tables */
+
+.container .main {
+    width: 15vw;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .main .gray {
+    position: relative;
+    left: 0px;
+    display: flex;
+    font-family: SuperiorBold;
+    color: rgba(128, 128, 128, 0.624);
+    justify-content: start;
+}
+
+.container .main .mainElements {
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.container .main .mainElements:hover{
+    cursor: pointer;
+    background-color: rgba(212, 212, 212, 0.624);
+    transition: 0.3s ease;
 }
 
 .right {
