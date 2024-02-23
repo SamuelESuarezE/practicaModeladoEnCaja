@@ -263,4 +263,32 @@ body {
     .right .cards {
         grid-template-columns: repeat(2,1fr);
     }
+    .title h1 {
+        display: none;
+    }
+    .left .container .dashboard {
+        justify-content: center;
+    }
+    .left .container .dashboard p {
+        display: none;
+    }
+    .container .main .gray {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .container .main .mainElements{
+        display: flex;
+        justify-content: center;
+    }
+    .container .main .mainElements p{
+        display: none;
+    }
+    .right .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .left .container .dashboard {
+        width: auto;
+    }
   }
