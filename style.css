@@ -201,12 +201,13 @@ body {
     padding-right: 30px;
     width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     gap: 20px;
 }
 
 .right .cards .card {
+    min-width: 40px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -257,3 +258,9 @@ body {
     height: 15px;
     width: 80%;
 }
+
+@media (max-width: 1000px) {
+    .right .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
