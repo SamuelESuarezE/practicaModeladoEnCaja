@@ -24,6 +24,8 @@ body {
 /* Parte izquierda */
 
 .left {
+    z-index: 1;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.334);
     display: flex;
     flex-direction: column;
     font-family: SuperiorMedium;
@@ -35,19 +37,21 @@ body {
 /* Admin Site */
 
 .left .title {
+    margin-top: 8px;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     gap: 10px;
 }
 
 .title img {
-    margin-left: 4px;
     width: 60px;
 }
 
 .title h1 {
-    font-size: 28px;
+    margin-right: 8px;
+    font-size: 35px;
     color: #3391F4;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -65,7 +69,7 @@ body {
 .left .container .dashboard {
     display: flex;
     position: relative;
-    top: 40px;
+    top: 30px;
     width: 15vw;
     background-color: #3391F4;
     color: white;
@@ -104,7 +108,7 @@ body {
 .container .main {
     width: 15vw;
     position: relative;
-    top: 50px;
+    top: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -170,4 +174,86 @@ body {
 
 .right .path {
     padding: 30px;
+}
+
+.right .path h1 {
+    margin: 5px 0px 15px 0px;
+}
+
+
+.right .path .navegator {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: #00000068;
+}
+
+.right .path .navegator p:first-child {
+    color: #256ebc;
+}
+
+.right .path .navegator p {
+    cursor: pointer;
+}
+
+.right .cards {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.right .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    width: auto;
+    height: auto;
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.396);
+}
+
+.card #subtitle {
+    margin-bottom: 20px;
+}
+
+.barra {
+    border-radius: 10px;
+    height: 15px;
+    width: auto;
+    background: rgb(215, 215, 215);
+    margin-bottom: 10px;
+}
+
+.barra .carga1 {
+    border-radius: 10px 0px 0px 10px;
+    background-color: #3391F4;
+    height: 15px;
+    width: 40%;
+}
+
+.barra .carga2 {
+    border-radius: 10px 0px 0px 10px;
+    background-color: #3391F4;
+    height: 15px;
+    width: 60%;
+}
+
+.barra .carga3 {
+    border-radius: 10px 0px 0px 10px;
+    background-color: #3391F4;
+    height: 15px;
+    width: 30%;
+}
+
+.barra .carga4 {
+    border-radius: 10px 0px 0px 10px;
+    background-color: #3391F4;
+    height: 15px;
+    width: 80%;
 }
