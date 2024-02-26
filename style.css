@@ -32,6 +32,8 @@ body {
     flex: 1;
     height: 100%;
     background: white;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Admin Site */
@@ -43,34 +45,35 @@ body {
     align-items: center;
     padding: 10px;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .title img {
-    width: 60px;
+    width: 50px;
 }
 
 .title h1 {
-    margin-right: 8px;
-    font-size: 35px;
+    width: auto;
+    font-size: 2em;
     color: #3391F4;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
 }
 
 /* Dashboard */
 
 .left .container {
+    align-items: start;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
 }
 
 .left .container .dashboard {
+    align-self: center;
     display: flex;
-    position: relative;
-    top: 30px;
-    width: 15vw;
+    width: 10vw;
     background-color: #3391F4;
     color: white;
     display: flex;
@@ -83,7 +86,7 @@ body {
 
 .left .container .dashboard:hover {
     border-radius: 0px;
-    width: 16.67vw;
+    width: 114%;
     cursor: pointer;
     background-color: #256ebc;
     transition: 0.3s ease;
@@ -106,17 +109,14 @@ body {
 /* Main & Tables */
 
 .container .main {
-    width: 15vw;
-    position: relative;
-    top: 40px;
+    align-items: start;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .container .main .gray {
-    position: relative;
-    left: 0px;
     display: flex;
     font-family: SuperiorBold;
     color: rgba(128, 128, 128, 0.624);
@@ -129,6 +129,7 @@ body {
     align-items: center;
     padding: 10px;
     gap: 10px;
+    width: 100%;
     border-radius: 10px;
     transition: 0.3s ease;
 }
@@ -142,7 +143,7 @@ body {
 /* Right side */
 
 .right {
-    flex: 5;
+    flex: 7;
     flex-direction: column;
     background: rgba(237, 237, 237, 0.975)
 }
@@ -151,7 +152,7 @@ body {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     background: white;
     align-items: center;
 }
@@ -167,8 +168,8 @@ body {
     cursor: pointer;
     display: flex;
     object-fit: cover;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 100px;
 }
 
@@ -177,6 +178,7 @@ body {
 }
 
 .right .path h1 {
+    font-size: 2em;
     margin: 5px 0px 15px 0px;
 }
 
@@ -184,7 +186,7 @@ body {
 .right .path .navegator {
     display: flex;
     gap: 10px;
-    font-size: 20px;
+    font-size: 1em;
     color: #00000068;
 }
 
@@ -220,12 +222,17 @@ body {
 }
 
 .card #subtitle {
-    margin-bottom: 20px;
+    font-size: 0.9em;
+    margin-bottom: 12px;
+}
+
+.card h1 {
+    font-size: 1.5em;
 }
 
 .barra {
     border-radius: 10px;
-    height: 15px;
+    height: 10px;
     width: auto;
     background: rgb(215, 215, 215);
     margin-bottom: 10px;
@@ -234,28 +241,28 @@ body {
 .barra .carga1 {
     border-radius: 10px 0px 0px 10px;
     background-color: #3391F4;
-    height: 15px;
+    height: 10px;
     width: 40%;
 }
 
 .barra .carga2 {
     border-radius: 10px 0px 0px 10px;
     background-color: #3391F4;
-    height: 15px;
+    height: 10px;
     width: 60%;
 }
 
 .barra .carga3 {
     border-radius: 10px 0px 0px 10px;
     background-color: #3391F4;
-    height: 15px;
+    height: 10px;
     width: 30%;
 }
 
 .barra .carga4 {
     border-radius: 10px 0px 0px 10px;
     background-color: #3391F4;
-    height: 15px;
+    height: 10px;
     width: 80%;
 }
 
@@ -274,7 +281,7 @@ body {
     }
     .container .main .gray {
         display: flex;
-        justify-content: center;
+        align-self: center;
         text-align: center;
     }
     .container .main .mainElements{
