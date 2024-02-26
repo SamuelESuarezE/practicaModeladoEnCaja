@@ -111,7 +111,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0;
     background: #cccccc;
-    width: 100%;
+    width: 1000px;
+    height: 150px;
+}
+
+.footerSpace {
+    width: 1000px;
     height: 150px;
 }
