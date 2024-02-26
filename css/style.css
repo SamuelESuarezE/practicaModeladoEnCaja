@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: #fa8071;
+    height: 180px;
+    color: white;
+}
+
+nav {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1bbc9b;
+    height: 50px;
+    padding: 10px 20px 10px 20px;
+}
+
+nav a {
+    color: white;
+}
+
+.enlaces, .languages {
+    display: flex;
+    gap: 30px;
+}
+
+.contenido {
+    display: flex;
+}
+
+.contenido p, b {
+    font-size: 14px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 10px;
+    background: #f1f1f1;
+    width: 30%;
+    height: auto;
+}
+
+aside .imagen {
+    background: #cccccc;
+    width: auto;
+    height: 150px;
+}
+
+
+
+aside #primeraImagen {
+    background: #cccccc;
+    width: auto;
+    height: 250px;
+}
+
+main{
+    background: #ffffff;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+main h3:first-child{
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+main h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+main .imagen {
+    background: #cccccc;
+    width: auto;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cccccc;
+    width: 100%;
+    height: 150px;
+}
