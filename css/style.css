@@ -1,11 +1,11 @@
 @font-face {
     font-family: "SuperiorMedium";
-    src: url("fonts/LTSuperior-Medium.otf");
+    src: url("storage/fonts/LTSuperior-Medium.otf");
 }
 
 @font-face {
     font-family: "SuperiorBold";
-    src: url("fonts/LTSuperior-Bold.otf");
+    src: url("storage/fonts/LTSuperior-Bold.otf");
 }
 
 * {
